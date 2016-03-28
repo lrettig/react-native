@@ -175,6 +175,7 @@ var NavigatorNavigationBar = React.createClass({
 
     return (
       <View
+        pointerEvents='box-none'
         key={this._key}
         style={[styles.navBarContainer, navBarStyle, this.props.style]}>
         {components}
