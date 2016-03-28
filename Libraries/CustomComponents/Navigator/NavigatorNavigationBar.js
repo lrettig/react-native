@@ -175,6 +175,11 @@ var NavigatorNavigationBar = React.createClass({
 
     return (
       <View
+        /**
+         * Work around what is most likely a bug in RNRF that prevents me from
+         * simply wrapping this nav bar in a view with this prop set instead,
+         * which would be so much easier.
+         */
         pointerEvents='box-none'
         key={this._key}
         style={[styles.navBarContainer, navBarStyle, this.props.style]}>
